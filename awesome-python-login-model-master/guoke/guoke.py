@@ -36,6 +36,11 @@ data = {
     'captcha_rand': captcha_rand,
     'permanent': 'y ',
 }
+print("salut")
+print("salut")
+print("salut")
+print("salut")
+print("salut")
 
 response = session.post(url, data=data)
 with open('response.html', 'w', encoding='utf-8') as fw:
