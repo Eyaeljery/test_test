@@ -35,6 +35,7 @@ context = js2py.EvalJs()
 # 翻译模式
 # 0:英译中 1:中译英
 translating_mode = 0
+with open("translate.js", "r", encoding="utf-8") as f
 
 class BaiDuTranslater(object):
     """
@@ -68,7 +69,6 @@ class BaiDuTranslater(object):
         # 判断翻译模式,选取对应的 from 和 to 值.
         if translating_mode == 0:
             from_str = "en"
-            to_str = "zh"
         else:
             
             to_str = "en"
