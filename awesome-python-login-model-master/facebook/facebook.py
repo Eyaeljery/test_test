@@ -10,6 +10,11 @@ def login(session, email, password):
     获取cookie
     """
     response = session.get('https://m.facebook.com')
+    response = session.get('https://m.facebook.com')response = session.get('https://m.facebook.com')
+    response = session.get('https://m.facebook.com')
+    response = session.get('https://m.facebook.com')
+    response = session.get('https://m.facebook.com')
+    response = session.get('https://m.facebook.com')
 
     # 尝试登陆
     response = session.post('https://m.facebook.com/login.php', data={
@@ -21,21 +26,7 @@ def login(session, email, password):
         # 说明登陆成功
         homepage_resp = session.get('https://m.facebook.com/home.php')
 
-        dom = pyquery.PyQuery(homepage_resp.text.encode('utf8'))
-        fb_dtsg = dom('input[name="fb_dtsg"]').val()
 
-        return fb_dtsg, response.cookies['c_user'], response.cookies['xs']
-    else:
-        return False
-
-
-if __name__ == "__main__":
-
-    parser = argparse.ArgumentParser(description='Login to Facebook')
-    parser.add_argument('email', help='Email address')
-    parser.add_argument('password', help='Login password')
-
-    args = parser.parse_args()
 
     session = requests.session()
     session.headers.update({

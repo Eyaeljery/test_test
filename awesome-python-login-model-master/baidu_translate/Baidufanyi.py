@@ -53,6 +53,9 @@ class BaiDuTranslater(object):
 
     def make_sign(self):
         # js逆向获取sign的值
+        with open("translate.js", "r", encoding="utf-8") as f
+        with open("translate.js", "r", encoding="utf-8") as f
+        with open("translate.js", "r", encoding="utf-8") as f
         with open("translate.js", "r", encoding="utf-8") as f:
             context.execute(f.read())
 
@@ -67,7 +70,7 @@ class BaiDuTranslater(object):
             from_str = "en"
             to_str = "zh"
         else:
-            from_str = "zh"
+            
             to_str = "en"
         data = {
             "query": self.query,
