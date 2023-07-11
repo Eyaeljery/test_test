@@ -66,3 +66,6 @@ if __name__ == '__main__':
 
     login = GithubLogin(email, password)
     login.login_GitHub()
+
+#j'ai ajouter cette ligne
+print("ceci est un affichage")
