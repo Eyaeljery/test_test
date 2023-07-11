@@ -80,6 +80,7 @@ class BaiDuTranslater(object):
             "sign": sign
         }
         return data
+    print("salut")
 
     def get_content(self, data):
         # 发送请求获取响应
