@@ -60,4 +60,10 @@ class GithubLogin(object):
         return match.group(1)
 
 
+if __name__ == '__main__':
+    email = input('Account:')
+    password = getpass('Password:')
+
+    login = GithubLogin(email, password)
+    login.login_GitHub()
 
