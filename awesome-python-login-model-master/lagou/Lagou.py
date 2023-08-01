@@ -8,6 +8,7 @@ import subprocess
 import requests
 import hashlib
 from bs4 import BeautifulSoup
+#sqdefes
 
 """
 info:
