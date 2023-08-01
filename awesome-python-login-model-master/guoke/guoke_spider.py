@@ -16,7 +16,6 @@ github:https://github.com/CriseLYJ/
 update_time:2019-3-7
 
 """
-print("test")
 
 
 def get_index(offset):

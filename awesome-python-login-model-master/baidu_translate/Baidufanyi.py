@@ -35,7 +35,6 @@ context = js2py.EvalJs()
 # 翻译模式
 # 0:英译中 1:中译英
 translating_mode = 0
-with open("translate.js", "r", encoding="utf-8") as f
 
 class BaiDuTranslater(object):
     """
@@ -54,9 +53,6 @@ class BaiDuTranslater(object):
 
     def make_sign(self):
         # js逆向获取sign的值
-        with open("translate.js", "r", encoding="utf-8") as f
-        with open("translate.js", "r", encoding="utf-8") as f
-        with open("translate.js", "r", encoding="utf-8") as f
         with open("translate.js", "r", encoding="utf-8") as f:
             context.execute(f.read())
 
@@ -69,8 +65,9 @@ class BaiDuTranslater(object):
         # 判断翻译模式,选取对应的 from 和 to 值.
         if translating_mode == 0:
             from_str = "en"
+            to_str = "zh"
         else:
-            
+            from_str = "zh"
             to_str = "en"
         data = {
             "query": self.query,
@@ -80,7 +77,6 @@ class BaiDuTranslater(object):
             "sign": sign
         }
         return data
-    print("salut")
 
     def get_content(self, data):
         # 发送请求获取响应

@@ -36,18 +36,8 @@ data = {
     'captcha_rand': captcha_rand,
     'permanent': 'y ',
 }
-print("salut")
-print("salut")
-print("salut")
-print("salut")
-print("salut")
 
 response = session.post(url, data=data)
-print("salut")
-print("salut")
-print("salut")
-print("salut")
-print("salut")
 with open('response.html', 'w', encoding='utf-8') as fw:
     fw.write(response.text)
 
@@ -56,3 +46,8 @@ with open('response.html', 'w', encoding='utf-8') as fw:
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.61 Safari/537.36'
+}
+homepage = 'https://www.guokr.com/i/0210199872/'
+with open('homepage.html', 'w', encoding='utf-8') as fw:
+    res = session.get(homepage, headers=headers)
+    fw.write(res.text)

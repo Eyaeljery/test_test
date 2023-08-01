@@ -58,6 +58,8 @@ class GithubLogin(object):
             print('Get Token Fail')
             return None
         return match.group(1)
+    
+    print('saluttt')
 
 
 if __name__ == '__main__':
@@ -66,5 +68,3 @@ if __name__ == '__main__':
 
     login = GithubLogin(email, password)
     login.login_GitHub()
-    print('test')
-
