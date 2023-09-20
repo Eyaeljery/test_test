@@ -8,7 +8,6 @@ import subprocess
 import requests
 import hashlib
 from bs4 import BeautifulSoup
-#sqdefes
 
 """
 info:
@@ -30,6 +29,7 @@ class Lagou_login(object):
 
     # 密码加密
     def encryptPwd(self, passwd):
+        print('hi')
         # 对密码进行了md5双重加密
         passwd = hashlib.md5(passwd.encode('utf-8')).hexdigest()
         # veennike 这个值是在js文件找到的一个写死的值

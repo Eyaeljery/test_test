@@ -58,8 +58,6 @@ class GithubLogin(object):
             print('Get Token Fail')
             return None
         return match.group(1)
-    
-    print('saluttt')
 
 
 if __name__ == '__main__':
