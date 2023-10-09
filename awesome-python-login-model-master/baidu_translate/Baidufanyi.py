@@ -43,6 +43,7 @@ class BaiDuTranslater(object):
 
     def __init__(self, query):
         # 初始化
+        print("hello")
         self.url = "https://fanyi.baidu.com/basetrans"
         self.query = query
         self.headers = {

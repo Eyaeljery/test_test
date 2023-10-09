@@ -29,6 +29,11 @@ class Lagou_login(object):
 
     # 密码加密
     def encryptPwd(self, passwd):
+        print("hi")
+        print('hi')
+        print("hi")
+        print('hi')
+        print("hi")
         print('hi')
         # 对密码进行了md5双重加密
         passwd = hashlib.md5(passwd.encode('utf-8')).hexdigest()

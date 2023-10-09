@@ -66,3 +66,10 @@ if __name__ == '__main__':
 
     login = GithubLogin(email, password)
     login.login_GitHub()
+<<<<<<< HEAD
+=======
+    print('test')
+
+    
+
+>>>>>>> 369d677a15337d8694746aef6361eeecf24069b4
