@@ -34,7 +34,6 @@ class Lagou_login(object):
         print("hi")
         print('hi')
         print("hi")
-        print('hi')
         # 对密码进行了md5双重加密
         passwd = hashlib.md5(passwd.encode('utf-8')).hexdigest()
         # veennike 这个值是在js文件找到的一个写死的值
