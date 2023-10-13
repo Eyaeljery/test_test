@@ -27,21 +27,18 @@ class Lagou_login(object):
                                       ' Core/1.53.4882.400 QQBrowser/9.7.13059.400',
                         'X-Requested-With': 'XMLHttpRequest'}
 
-    # 密码加密
     def encryptPwd(self, passwd):
         print("hi")
         print('hi')
         print("hi")
         print('hi')
-        print("hi")
-        # 对密码进行了md5双重加密
+        
+        
         passwd = hashlib.md5(passwd.encode('utf-8')).hexdigest()
-        # veennike 这个值是在js文件找到的一个写死的值
         passwd = 'veenike' + passwd + 'veenike'
         passwd = hashlib.md5(passwd.encode('utf-8')).hexdigest()
         return passwd
 
-    # 获取请求token
     def getTokenCode(self):
         login_page = 'https://passport.lagou.com/login/login.html'
 
